@@ -31,10 +31,10 @@ function ListItems() {
     
   };
 
-  const handleUpdateTask = (id, newText) => {
-    if (newText.trim() !== '') {
+  const handleUpdateTask = (id, newTodo) => {
+    if (newTodo.trim() !== '') {
     const updatedTasks = tasks.map((task) =>
-      task.id === id ? { ...task, todo: newText } : task
+      task.id === id ? { ...task, todo: newTodo } : task
     );
     setTasks(updatedTasks);}
     else{
@@ -70,7 +70,7 @@ function ListItems() {
         {tasks.map((task) => (
           <li id="list-items" key={task.id} className={task.completed ? 'completed list-group-item' : 'list-group-item'}>
             {task.todo}
-            <button  className="add btn btn-primary" onClick={() => handleUpdateTask(task.id, prompt('Edit task:', task.text))}>
+            <button  className="add btn btn-primary" onClick={() => handleUpdateTask(task.id, prompt('Edit task:', task.todo))}>
               Update
             </button>
             <button  className="add btn btn-warning" onClick={() => handleDeleteTask(task.id)}>Delete</button>
