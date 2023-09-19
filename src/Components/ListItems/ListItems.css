@@ -1,0 +1,39 @@
+.outer-container{
+    width:100%;
+    
+    }
+
+.list{
+    margin-left: 15%;
+    width:1000px;
+    margin-top: 40px;
+    position: relative;
+    
+}
+.input{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 40px;
+    
+}
+.add{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 20%;
+    
+}
+
+.input-button{
+    width: 20%;
+    margin-left: 5%;
+}
+
+.check-box{
+ position: absolute;
+ top:5px;
+ right: 10px; 
+ 
+}
